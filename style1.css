@@ -1,0 +1,521 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+body .bg-color{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(206,0,126);
+    background: -moz-linear-gradient(120deg, rgba(206,0,126,1) 0%, rgba(26,1,56,1) 100%);
+    background: -webkit-linear-gradient(120deg, rgba(206,0,126,1) 0%, rgba(26,1,56,1) 100%);
+    background: linear-gradient(120deg, rgba(206,0,126,1) 0%, rgba(26,1,56,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ce007e",endColorstr="#1a0138",GradientType=1);
+    z-index: 0;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+/* div#main-section{ 
+    z-index: 2;
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    border: 2px solid red;
+} */
+
+#main-section {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: 80vh;
+    /* flex-grow: 1; */
+    /* margin: auto; */
+    /* background-color: aqua; */
+    z-index: 1;
+    border-radius: 45px;
+    /* min-width: 900px;
+    min-height: 700px; */
+    /* border: 3px solid #ffffff00; */
+    box-shadow: 5px 5px 10px #00000070;
+    background: rgb(255,0,156);
+    background: -moz-linear-gradient(120deg, rgba(255,0,156,1) 0%, rgba(26,1,56,1) 100%);
+    background: -webkit-linear-gradient(120deg, rgba(255,0,156,1) 0%, rgba(26,1,56,1) 100%);
+    background: linear-gradient(120deg, rgba(255,0,156,1) 0%, rgba(26,1,56,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff009c",endColorstr="#1a0138",GradientType=1);
+
+    
+}
+
+
+.sub-section1{
+
+    
+    /* background: rgb(206,0,126);
+    background: -moz-linear-gradient(120deg, rgba(206,0,126,1) 0%, rgba(26,1,56,1) 100%);
+    background: -webkit-linear-gradient(120deg, rgba(206,0,126,1) 0%, rgba(26,1,56,1) 100%);
+    background: linear-gradient(120deg, rgba(206,0,126,1) 0%, rgba(26,1,56,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ce007e",endColorstr="#1a0138",GradientType=1); */
+    /* border: 2px solid red; */
+    /* border-radius: 50px 0 0 50PX ; */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: no-wrap; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;  
+    padding: 20px; 
+    margin: auto; 
+    flex-basis: 60%;
+}
+
+/* .mySlides{
+    display: flex;
+    align-items: center;
+
+} */
+
+.slideshow-container{
+    display: block;
+    text-align: center;
+    
+
+}
+
+span.dot i{
+    font-size: 10px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+
+
+
+span.dot i:hover{
+    color: rgb(13, 0, 57);
+    padding: 10px;
+}
+
+.slideshow-container mysliders{
+    flex-basis: auto;
+}
+.sub-section1 p{
+    color: #ffffffd6;
+    font-size: 14px;
+    text-align: center;
+}
+.slideshow-container img{
+    /* display: flex */
+    width: 80%;
+    align-self: center;
+
+}
+
+/* .myslider img{
+    width: 50%;
+    height: 50%;
+} */
+
+.sub-section2{
+    flex-basis: 40%;
+    background-color: #e7e7e7;
+    border-radius: 0 50px 50px 0;
+    border-left: 15px solid white ;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-evenly;
+    padding: 50px 0 0 0 ;
+}
+
+#head3{
+    position: absolute;
+    left: -15px;
+    top: 5%;
+    padding: 15px;
+    font-weight: 400;
+    color:#e7e7e7;
+    word-spacing: 2px;
+    letter-spacing: 1.2px;
+    border-radius: 0 20px 20px 0;
+    z-index: 2;
+
+    background: rgb(206,0,126);
+    background: -moz-linear-gradient(120deg, rgba(206,0,126,1) 0%, rgba(26,1,56,1) 100%);
+    background: -webkit-linear-gradient(120deg, rgba(206,0,126,1) 0%, rgba(26,1,56,1) 100%);
+    background: linear-gradient(120deg, rgba(206,0,126,1) 0%, rgba(26,1,56,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ce007e",endColorstr="#1a0138",GradientType=1);
+}
+
+
+
+
+
+#head5{
+    /* font-size: 72px; */
+  background: -webkit-linear-gradient(120deg, rgba(206,0,126,1) 0%, rgba(26,1,56,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+
+
+#formsection input#text, input#password{ 
+    background-color: transparent;
+    border: none;
+    margin-left: 5px;
+    padding: 5px;
+}
+#formsection div.input-text{
+    border-bottom: 2px solid #110f0f;
+    margin: 15px 0 25px 0;
+}
+#formsection div.input-pass{
+    border-bottom: 2px solid #110f0f;
+    margin: 15px 0 3px 0;
+}
+/* input#text:focus{
+    border: none;
+}
+input#text:active{
+    border: none;
+}
+input#text:target{
+    border: none;
+} */
+#formsection i{
+    color: #848484;
+}
+
+#forgotpass{
+    text-align: end;
+}
+#forgotpass a{
+    font-size: small;
+}
+
+input#submit{
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.89);
+    font-weight: 700;
+    border: transparent;
+    border-radius: 50px;
+   
+}
+
+
+
+
+
+
+
+input#submit {
+    background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 50px;
+    display: block;
+  }
+
+  input#submit:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+
+
+#below {
+    font-size: 12px;
+
+}
+
+#below a{
+    color: rgb(110, 15, 74);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:920px) {
+
+    #main-section {
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0px;
+    }
+    .sub-section1{
+        
+        flex-basis: 100%;
+        border-radius: 0px;
+        height: 100%;
+        font-size: large;
+    }
+    .sub-section2{
+        
+        flex-basis: 100%;
+        border-radius: 0px;
+        height: 100%;
+        font-size: x-large;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* Kindle fire XDR update UI
+   Laptop with touch update UI
+*/
+
+/* @media only screen and (max-width:950px) and (max-height:1280px)  {
+
+    #main-section {
+        height: 800px;
+    }
+
+    #head3{
+        top: 12%;
+      
+    }
+    #head5{
+        position: relative;
+        top: 10%;
+        text-align: center;
+      
+    }
+    
+} */
+
+
+
+/* Kindle fire XDR update UI
+   Laptop with touch update UI
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* @media screen and (orientation : Portrait)  */
+
+
+input:focus {
+    outline: none;
+}
+
+
+
+@media screen and (min-width:650px) and (max-width:920px) { 
+
+    #main-section {
+        height: 100%;
+        width: 100vw;
+        border-radius: 0px;
+    }
+
+}
+
+
+
+/* @media screen and (min-width:240px) and (max-width:650px) {
+
+    body .bg-color{
+        display: block;
+        height: 100vh;
+        width: 100%;
+        
+    }
+
+
+  
+
+    #main-section {
+        display: block !important;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        border-radius: 0;
+        
+        flex-grow: 1;
+    }
+    .sub-section1{
+        
+        width: 100%;
+        height: 100%;
+        flex-basis: 800px;
+        border-radius: 0;
+        
+        
+        
+    }
+
+
+    .sub-section2{
+        
+        flex-basis: 500px;
+        border-radius: 0;
+        order: -1;
+        border: none;
+    } */
+
+
+    /* body .bg-color{
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+    
+    
+    
+    #main-section {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .sub-section1{
+        
+        
+        flex-basis: 800px;
+        border-radius: 0;
+        
+        width: 100%;
+    }
+    
+    .sub-section2{
+        
+        flex-basis: 500px;
+        border-radius: 0;
+        order: -1;
+        border: none;
+    }
+    
+    #head3{
+        position: absolute;
+        left: 0px;
+        top: 5%;
+        padding: 15px;
+        
+    } */
+
+   
+
+/* } */
+
+
+
+
+
+
+
+
+
+/*  Nokia 8110 4G ui issue */
+
+@media screen and (min-width:0px) and (max-width:240px)  {
+
+    body .bg-color{
+        /* display: block; */
+        height: 100%;
+        width: 100%;
+    }
+
+    #main-section {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+
+
+    .sub-section1{
+        
+        
+        border-radius: 0;
+        
+        display: none;
+        
+        height: 300px;
+        color: #110f0f;
+    }
+
+    .sub-section2{
+        
+        /* flex-basis: 500px; */
+        overflow-y: auto;
+        border-radius: 0;
+        order: -1;
+        border: none;
+        display: block;
+        padding: 150px 0 60px 0;
+        text-align: center;
+
+    }
+
+}
+
+
+/*  Nokia 8110 4G ui issue */
+
+
+
+
+
