@@ -1,0 +1,266 @@
+:root{
+  --primary: #ddd;
+  --secondary: #ffffff;
+  --dark: #333;
+  --light: #fff;
+  --light-dark: #585858;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+
+html{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body{
+  background: #ccc;
+  margin: 30px 40px;
+  line-height: 1.4;
+}
+
+
+.btn{
+  background: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  /* 1rem = 16px */
+  text-decoration: none;
+  border: 0;
+}
+
+.btn:hover {
+  background: var(--light-dark);
+  color: var(--primary);
+  padding: 0.6rem 1.3rem;
+  /* 1rem = 16px */
+  text-decoration: none;
+  border: 0;
+}
+
+
+img{
+  max-width: 100%;
+}
+
+.main-body-wrapper{
+  display: grid;
+  grid-gap: 20px;
+}
+
+
+/* Navigation */
+
+.navbar ul {
+  list-style-type: none;
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+
+
+.navbar li a{
+  background: var(--primary);
+  text-decoration: none;
+  /* justify-self: center; */
+  font-size: 1.2rem;
+  display: block;
+  text-align: center;
+  padding: 0.8rem;
+  color: var(--dark);
+  box-shadow: var(--shadow);
+  text-transform: uppercase;
+  transition-duration: 0.5s;
+}
+
+.navbar a:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+
+
+/* Top Container */
+
+.top-container
+{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 
+  "showcase showcase top-box-a"
+  "showcase showcase top-box-b"
+  "showcase showcase top-box-c";
+}
+
+.showcase{
+  grid-area: showcase;
+  min-height: 500px;
+  background: url(img/showcase.jpg);
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: var(--light);
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: var(--light);
+}
+
+/* .showcase a {
+  display: inline;
+  padding: 20px;
+  max-width: 200px;
+} */
+
+.top-box{
+  background: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow);
+  padding: 30px;
+  transition: 0.8s;
+}
+
+.top-box p.price{
+  font-size: 2.3rem;
+  color: #074201;
+}
+
+.top-box:hover{
+  background: var(--secondary);
+}
+
+.top-box-a{
+  grid-area: top-box-a;
+}
+
+.top-box-b{
+  grid-area: top-box-b;
+}
+
+.top-box-c{
+  grid-area: top-box-c;
+}
+
+/* Boxes Section */
+
+.boxes{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+  transition: 0.5s;
+}
+
+.box:hover{
+
+  background: var(--secondary);
+}
+
+
+/* Info */
+.info {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
+
+
+
+.info div{
+  overflow: auto;
+}
+
+/* Portfolio */
+.portfolio {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img {
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+
+ /* Media Queries */
+ @media (max-width: 700px) {
+  .top-container {
+    grid-template-areas:
+      'showcase showcase'
+      'top-box-a top-box-b'
+      'top-box-c .';
+  }
+
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  .navbar ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .navbar ul {
+    grid-template-columns: 0.9fr;
+    /* justify-self: center; */
+    justify-content: center;
+  }
+
+  .top-container {
+    grid-template-areas:
+      'showcase'
+      'top-box-a'
+      'top-box-b'
+      'top-box-c';
+  }
+}
