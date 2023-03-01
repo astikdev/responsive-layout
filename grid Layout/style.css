@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/* <!--1.4 Fluid - Using same-size images --> */
+.grid4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    /* width: 200px; */
+    align-items: center;
+    justify-items: center;
+    justify-content: center; /* not working properly */
+}
+
+.grid4 img{
+    width: 100%;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+}
+/* <!--1.4 Fluid - Using same-size images --> */
+
+
+
+/* <!--1.5 Fluid - Using same-size images , grid-template-columns: repeat(auto-fit, minmax(200px, 300px)); --> */
+.grid5{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 30px;
+    
+    /* align-items: center; */
+    /* justify-items: center; */
+    justify-content: center; 
+    /* working properly */
+}
+
+.grid5 img{
+    width: 100%;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+}
+/* <!--1.5 Fluid - Using same-size images , grid-template-columns: repeat(auto-fit, minmax(200px, 300px)); --> */
+
+
+/* <!--1.6 Fluid - Align & justify items stretch , grid-template-columns: repeat(auto-fit, minmax(200px, 300px)); --> */
+.grid6{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 30px;
+    
+    align-items: stretch;
+    /* justify-items: center; */
+    justify-content: center; 
+    /* working properly */
+}
+
+.grid6 img{
+    width: 100%;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+}
+/* <!--1.6 Fluid - Align & justify items stretch , grid-template-columns: repeat(auto-fit, minmax(200px, 300px)); --> */
+
+
+
+
+/* <!--1.7 Fluid - Align & justify items stretch , grid-template-columns: repeat(auto-fit, minmax(200px, 300px)); --> */
+.grid6{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 30px;
+    
+    align-items: stretch;
+    /* justify-items: center; */
+    justify-content: center; 
+    /* working properly */
+}
+
+.grid6 img{
+    width: 100%;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+}
+/* <!--1.7 Fluid - Align & justify items stretch , grid-template-columns: repeat(auto-fit, minmax(200px, 300px)); --> */
