@@ -515,7 +515,7 @@ responsivediv{
 
     mainsection{
         grid-template-columns: 0 1fr 0;
-        padding:0 10% 0 10%;
+        
     }
 
     .hiddendiv{
