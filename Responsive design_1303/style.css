@@ -293,7 +293,7 @@ responsivediv{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center ;
-        height: 100vh;
+        height: 150vh;
         width: 100%;
     }
 
@@ -313,6 +313,7 @@ responsivediv{
         background-color: rgba(0, 0, 0, 0.3);
         height: 100%;
         width: 650px;
+        padding: none;
     }
     .emailform{
         display: grid;
@@ -348,6 +349,71 @@ responsivediv{
 
 
 }
+
+@media screen and (max-width:550px) and (orientation : Portrait) {
+
+    body{
+        background-image: url("./img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        height: 150vh;
+        width: 100%;
+    }
+
+    
+
+    .mainsection{
+        grid-template-columns: 0 1fr 0;
+        /* padding:10px; */
+    }
+
+    .hiddendiv{
+        display: none;
+    }
+
+    .maindiv{
+        
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        width: 550px;
+        padding: none;
+    }
+    .emailform{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-auto-flow: row;
+
+    }
+    .mainlable {
+        text-align: center;
+        font-size: x-large;
+        
+    }
+    /* input{
+        text-align: center;
+    } */
+    button{
+        display: block;
+        text-align: center;
+    }
+    button:hover{
+        display: block;
+        text-align: center;
+        margin-top: 10%;
+        padding: 15px;
+        background-color: #8cf6ef;
+        border: none;
+        border-radius: 5px;
+        font-size: larger;
+        font-weight: 900;
+    
+    }
+
+
+}
+
 
 
 
