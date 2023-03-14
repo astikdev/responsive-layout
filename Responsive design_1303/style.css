@@ -25,9 +25,18 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-areas: "responsivediv1 responsivediv2  responsivediv3 ";
     /* align-items: center; */
 }
-
+.responsivediv1{
+    grid-area: responsivediv1 ;
+}
+.responsivediv2{
+    grid-area: responsivediv2 ;
+}
+.responsivediv3{
+    grid-area: responsivediv3 ;
+}
 
 .maindiv{
     /* display: grid; */
@@ -36,9 +45,9 @@ body{
     height: 100%;
     padding:0 20% 0 20%;
     text-align: center;
-    /* align-self: center; */
+    
     justify-items: center;
-    /* grid-template-rows: 0.3fr 0.2fr 0.2fr 0.2fr 0.1fr 0.3fr; */
+    
 }
 
 
@@ -350,7 +359,7 @@ responsivediv{
 
 }
 
-@media screen and (max-width:550px) and (orientation : Portrait) {
+/* @media screen and (max-width:550px) and (orientation : Portrait) {
 
     body{
         background-image: url("./img/aurora.jpg");
@@ -360,43 +369,53 @@ responsivediv{
         height: 150vh;
         width: 100%;
     }
-
-    
-
-    .mainsection{
-        grid-template-columns: 0 1fr 0;
-        /* padding:10px; */
-    }
-
     .hiddendiv{
         display: none;
     }
+    
+
+    .mainsection{
+        grid-template-rows: 0 1fr 0;
+    grid-template-areas: "responsivediv1 responsivediv2  responsivediv3 ";
+    }
+
+    
 
     .maindiv{
+        display: flex;
+
         
+        width: 100%;
         background-color: rgba(0, 0, 0, 0.3);
         height: 100%;
-        width: 550px;
+        padding: none;
+    
         padding: none;
     }
-    .emailform{
-        display: grid;
-        justify-content: center;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr;
-        grid-auto-flow: row;
 
+    .submaindiv img{
+        width: 60%;
     }
+
+    .mainpara{
+        font-size:larger;
+    }
+
+    
     .mainlable {
         text-align: center;
-        font-size: x-large;
+        font-size: large;
         
     }
-    /* input{
+    input{
         text-align: center;
-    } */
+        max-width: 80%;
+        justify-self: center;
+    }
     button{
         display: block;
-        text-align: center;
+        max-width: 100%;
+        justify-self: center;
     }
     button:hover{
         display: block;
@@ -412,7 +431,7 @@ responsivediv{
     }
 
 
-}
+} */
 
 
 
