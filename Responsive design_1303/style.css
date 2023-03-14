@@ -34,7 +34,7 @@ body{
     /* align-items: center; */
     background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
-    padding:0 25% 0 25%;
+    padding:0 20% 0 20%;
     text-align: center;
     /* align-self: center; */
     justify-items: center;
@@ -76,9 +76,9 @@ p.thintext{
 
 .mainlable{
     display: block;
-    font-size: large;
-    text-align: left !important;
-    margin-left: 10px !important;
+    font-size: x-large;
+    text-align: left ;
+    margin-left: 10px;
     padding-left: 10px;
     /* padding-top: 30%; */
     margin-top: 15%;
@@ -87,7 +87,7 @@ p.thintext{
 
 input{
     display: block;
-    text-align: left !important;
+    text-align: left ;
     padding: 15px 80px 15px 10px;
     background-color: rgba(0, 0, 0, 0.3);
     border: none;
@@ -108,9 +108,6 @@ button{
     border-radius: 5px;
     font-size: larger;
     font-weight: 900;
-
-    
-
 }
 
 
@@ -125,9 +122,6 @@ button:hover{
     border-radius: 5px;
     font-size: larger;
     font-weight: 900;
-    
-
-    
 
 }
 
@@ -135,6 +129,8 @@ button:hover{
 .footerpara{
     vertical-align: bottom;
     margin-top: 25%;
+    margin-bottom: 5%;
+    padding-bottom: 15px;
     color: #fff;
     font-weight: 700;
 }
@@ -152,6 +148,425 @@ responsivediv{
     right: 50px;
 
 }
+.mainsection-position-image{
+    display: none;
+}
+
+
+/* @media screen and (max-width:5000px) {
+   
+
+
+} */
+
+@media screen and (max-width:1150px) and (orientation : Portrait) {
+   
+    body{
+        background-image: url("./img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        height: 100%;
+        width: 100%;
+    }
+
+    
+
+    mainsection{
+        grid-template-columns: 0 1fr 0;
+        padding:0 10% 0 10%;
+    }
+
+    .hiddendiv{
+        display: none;
+    }
+
+    .maindiv{
+        
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        width: 1150px;
+    }
+    .emailform{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-auto-flow: row;
+
+    }
+    .mainlable {
+        text-align: center;
+        font-size: x-large;
+        
+    }
+    /* input{
+        text-align: center;
+    } */
+    button{
+        display: block;
+        text-align: center;
+    }
+    button:hover{
+        display: block;
+        text-align: center;
+        margin-top: 10%;
+        padding: 15px;
+        background-color: #8cf6ef;
+        border: none;
+        border-radius: 5px;
+        font-size: larger;
+        font-weight: 900;
+    
+    }
+
+    
+
+    
+   
+
+
+}
+
+@media screen and (max-width:920px) {
+
+    body{
+        background-image: url("./img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        height: 100%;
+        width: 100%;
+    }
+
+    
+
+    mainsection{
+        grid-template-columns: 0 1fr 0;
+        padding:0 10% 0 10%;
+    }
+
+    .hiddendiv{
+        display: none;
+    }
+
+    .maindiv{
+        
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        width: 920px;
+    }
+    .emailform{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-auto-flow: row;
+
+    }
+    .mainlable {
+        text-align: center;
+        font-size: x-large;
+        
+    }
+    /* input{
+        text-align: center;
+    } */
+    button{
+        display: block;
+        text-align: center;
+    }
+    button:hover{
+        display: block;
+        text-align: center;
+        margin-top: 10%;
+        padding: 15px;
+        background-color: #8cf6ef;
+        border: none;
+        border-radius: 5px;
+        font-size: larger;
+        font-weight: 900;
+    
+    }
+   
+
+}
+
+@media screen and (max-width:650px) and (orientation : Portrait) {
+
+    body{
+        background-image: url("./img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        height: 100%;
+        width: 100%;
+    }
+
+    
+
+    .mainsection{
+        grid-template-columns: 0 1fr 0;
+        /* padding:10px; */
+    }
+
+    .hiddendiv{
+        display: none;
+    }
+
+    .maindiv{
+        
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        width: 650px;
+    }
+    .emailform{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-auto-flow: row;
+
+    }
+    .mainlable {
+        text-align: center;
+        font-size: x-large;
+        
+    }
+    /* input{
+        text-align: center;
+    } */
+    button{
+        display: block;
+        text-align: center;
+    }
+    button:hover{
+        display: block;
+        text-align: center;
+        margin-top: 10%;
+        padding: 15px;
+        background-color: #8cf6ef;
+        border: none;
+        border-radius: 5px;
+        font-size: larger;
+        font-weight: 900;
+    
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (orientation : Landscape) and (max-width:1150px) {
+    
+    body{
+        background-image: url("./img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        height: 100%;
+        width: 100%w;
+    }
+
+    
+
+    mainsection{
+        grid-template-columns: 0 1fr 0;
+        padding:0 10% 0 10%;
+    }
+
+    /* .hiddendiv{
+        display: none;
+    } */
+
+    .maindiv{
+        
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        width: 1300px;
+    }
+    .emailform{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-auto-flow: row;
+
+    }
+    .mainlable {
+        text-align: center;
+        font-size: x-large;
+        
+    }
+    /* input{
+        text-align: center;
+    } */
+    button{
+        display: block;
+        text-align: center;
+    }
+    button:hover{
+        display: block;
+        text-align: center;
+        margin-top: 10%;
+        padding: 15px;
+        background-color: #8cf6ef;
+        border: none;
+        border-radius: 5px;
+        font-size: larger;
+        font-weight: 900;
+    
+    }
+
+
+
+   /* .position-image{
+    display: none;
+   } */
+    .position-image {
+        display: none;
+        
+    
+    }
+
+}
+
+@media screen and (orientation : Landscape) and (max-width:900px) {
+    body{
+        background-image: url("./img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        height: 100%;
+        width: 100%w;
+    }
+
+    
+
+    mainsection{
+        grid-template-columns: 0 1fr 0;
+        padding:0 10% 0 10%;
+    }
+
+    .hiddendiv{
+        display: none;
+    }
+
+    .maindiv{
+        
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        width: 900px;
+    }
+    .emailform{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-auto-flow: row;
+
+    }
+    .mainlable {
+        text-align: center;
+        text
+    }
+    input{
+        text-align: center;
+    }
+    button{
+        display: block;
+        text-align: center;
+    }
+    button:hover{
+        display: block;
+        text-align: center;
+        margin-top: 10%;
+        padding: 15px;
+        background-color: #8cf6ef;
+        border: none;
+        border-radius: 5px;
+        font-size: larger;
+        font-weight: 900;
+    
+    }
+
+
+
+   .position-image{
+    display: none;
+   }
+}
+
+
+
+@media screen and (orientation : Landscape) and (max-width:650px) {
+    body{
+        background-image: url("./img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        height: 100%;
+        width: 100%w;
+    }
+
+    
+
+    mainsection{
+        grid-template-columns: 0 1fr 0;
+        padding:0 10% 0 10%;
+    }
+
+    .hiddendiv{
+        display: none;
+    }
+
+    .maindiv{
+        
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        width: 650px;
+    }
+    .emailform{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-auto-flow: row;
+
+    }
+    .mainlable {
+        text-align: center;
+        text
+    }
+    input{
+        text-align: center;
+    }
+    button{
+        display: block;
+        text-align: center;
+    }
+    button:hover{
+        display: block;
+        text-align: center;
+        margin-top: 10%;
+        padding: 15px;
+        background-color: #8cf6ef;
+        border: none;
+        border-radius: 5px;
+        font-size: larger;
+        font-weight: 900;
+    
+    }
+
+
+
+   .position-image{
+    display: none;
+   }
+}
+
+
 
 
 
