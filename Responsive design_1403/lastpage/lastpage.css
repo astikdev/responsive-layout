@@ -1,0 +1,1023 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+:root {
+    --main-color : #fff;
+    --btn: #3abb9d;
+    --btn-hover: #00ffc3;
+    --small1-2: 1.2rem;
+    --medium1-5: 1.5rem;
+    --large1-7: 1.7rem;
+    --x-large1-8: 1.8rem;
+    --xx-large2-1: 2.1rem;
+    --xxx-large2-4: 2.4rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.mainsection{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(33.33%,1fr) minmax(66.66%,2fr);
+    grid-template-areas: "responsivediv2 responsivediv3";
+    align-items: center;
+
+    background-image: url("../img/aurora.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+    /* height: 100vh;
+    width: 100vw; */
+    overflow: hidden;
+    overflow-y: auto;
+
+
+}
+/* .responsivediv1{
+    grid-area: responsivediv1 ;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+} */
+.responsivediv2{
+    grid-area: responsivediv2 ;
+    max-width: 100%;
+    
+}
+.responsivediv3{
+    grid-area: responsivediv3 ;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+
+.maindiv{
+    /* display: grid; */
+    /* align-items: center; */
+    
+    height: 100%;
+    padding:0 5% 0 5%;
+    text-align: center;
+    justify-items: center;
+    position: relative;;
+}
+.subgrid{
+    height: 100%;
+}
+
+
+.div-floating{
+
+    position: absolute;
+    left: 0;
+    top: 2%;
+    background-color: #fff;
+    font-size: var(--xx-large2-1);
+    font-weight: 800;
+    padding: 15px;
+    border-radius: 0 2px 2px 0;
+}
+
+.col-grid{
+    display: grid;
+    grid-template-columns: minmax(15%,1fr) minmax(15%,1fr) minmax(15%,1fr) minmax(15%,1fr) ;
+    grid-template-areas: "area1 area2 area3 area4";
+    margin-top: 25%;
+}
+.area1{
+    
+    grid-area: area1;
+    align-items: center;
+    text-align: center;
+}
+.area2{
+    grid-area: area2;
+    align-items: center;
+    text-align: center;
+}
+.area3{
+    grid-area: area3;
+    align-items: center;
+    text-align: center;
+}
+.area4{
+    grid-area: area4;
+    align-items: center;
+    text-align: center;
+}
+
+div.timenumber{
+    color: #fff;
+    background: none;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 4rem;
+    font-weight: 900;
+}
+.area label{
+    color: #fff;
+    background: none;
+    font-size: var(--medium1-5);
+}
+
+.maindiv img{
+    
+    margin-top: 30% ;
+}
+.maindiv h1{
+    
+    margin-top: 3% ;
+}
+
+
+.mainpara{
+    font-size: var(--large1-7);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin: 5px;
+    color: #fff;
+    
+    
+
+}
+
+p.boldtext{
+    margin-top: 8%;
+    font-weight: 900;
+}
+
+p.thintext{
+    margin-top: 3%;
+    font-weight: 100;
+    margin-bottom: 10%;
+}
+
+
+
+
+
+
+.responsivediv3{
+    display: grid;
+    grid-template-columns: minmax(50%,1fr) minmax(50%,1fr);
+    grid-template-rows: minmax(65%,1fr) minmax(35%,1fr);
+    grid-template-areas: "firstsidbarsection secondsidbarsection " 
+                        "beloWfullsection beloWfullsection";
+}
+
+.firstsidbarsection{
+    grid-area: firstsidbarsection;
+    height: 100%;
+    width: 100%;
+    margin-top: 30% ;
+    margin-left: 10% ;
+    
+}
+.secondsidbarsection{
+    grid-area: secondsidbarsection;
+    height: 100%;
+    width: 100%;
+    margin-top: 30% ;
+    margin-left: 10% ;
+}
+.beloWfullsection{
+    grid-area: beloWfullsection;
+    display: grid;
+    grid-template-columns: minmax(50%,1fr) minmax(50%,1fr);
+    grid-template-areas: "beloWfullsection1 beloWfullsection2";
+}
+.beloWfullsection1{
+    grid-area: beloWfullsection1;
+    margin-left: 10% ;
+}
+.beloWfullsection2{
+    grid-area: beloWfullsection2;
+    justify-self: center;
+}
+
+
+p.title{
+    color: var(--main-color);
+    text-transform:uppercase;
+    letter-spacing: 3px;
+    font-size: var(--x-large1-8) ;
+    padding-bottom: 2%;
+}
+
+h3.dateheading{
+    padding-top: 5%;
+    color: var(--main-color);
+    /* text-transform:capitalize; */
+    /* letter-spacing: 3px; */
+    font-size: var(--xxx-large2-4) ;
+    font-weight: 600;
+}
+h3.sideheading{
+    padding-top: 2%;
+    color: var(--main-color);
+    /* text-transform:capitalize; */
+    /* letter-spacing: 3px; */
+    font-size: var(--xxx-large2-4) ;
+    font-weight: 600;
+}
+p.subdecription{
+    color: var(--main-color);
+    font-size: var(--small1-2);
+    letter-spacing: 1.5px;
+}
+.margin-top-8{
+    margin-top: 8%;
+}
+a.alink{
+    color: var(--btn);
+}
+a.alink:hover{
+    color: var(--btn-hover);
+}
+a.bigfont{
+    font-size: var(--xx-large2-1);
+}
+
+
+
+
+
+button.belowsection{
+    display: block;
+    text-align: left;
+    /* margin-top: 10%; */
+    padding: 15px 30px;
+    background-color: var(--btn);
+    border: none;
+    border-radius: 5px;
+    font-size: var(--medium1-5);
+    font-weight: 900;
+}
+button.belowsection:hover{
+    
+    background-color: var(--btn-hover);
+    
+
+}
+/* .footerpara{
+    vertical-align: bottom;
+    margin-top: 25%;
+    margin-bottom: 5%;
+    padding-bottom: 15px;
+    color: #fff;
+    font-weight: 700;
+}
+.footerpara a{
+    color: #fbf9f9;
+}
+responsivediv{
+    position: relative;
+}
+.position-image {
+    position:fixed;
+    bottom: 0px;
+    right: 16px;
+
+}
+.mainsection-position-image{
+    display: none;
+} */
+
+
+
+@media screen and (max-width:1320px)  and (orientation : Portrait) {
+
+    
+    .maindiv img{
+    
+        width: 80%;
+        height: auto;
+    }
+    .mainpara{
+        font-size: 1.4rem;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        margin: 5px;
+        color: #fff; 
+    
+    }
+
+
+}
+
+@media screen and (max-width:1100px)  and (orientation : Portrait) {
+
+    
+    .mainsection{
+        background-image: url("../img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100%;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "responsivediv2 responsivediv2" 
+                             "responsivediv3 responsivediv3";
+        align-items: center;
+    }
+    .responsivediv2{
+        grid-area: responsivediv2 ;
+        width: 100%;
+    }
+    .responsivediv3{
+        grid-area: responsivediv3 ;
+    }
+    .maindiv img{
+    
+        width: 100%;
+        height: auto;
+    }
+    .mainpara{
+        font-size: var(--xxx-large2-4);
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        margin: 5px;
+        color: #fff; 
+    }
+    .col-grid{
+        display: grid;
+        grid-template-columns: minmax(15%,1fr) minmax(15%,1fr) minmax(15%,1fr) minmax(15%,1fr) ;
+        grid-template-areas: "area1 area2 area3 area4";
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+
+}
+
+
+@media screen and (max-width:920px)  and (orientation : Portrait) {
+
+    
+    .mainsection{
+        background-image: url("../img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 50%;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 0.8fr 1fr;
+        grid-template-areas: "responsivediv2 responsivediv2" 
+                             "responsivediv3 responsivediv3";
+        align-items: center;
+    }
+    .responsivediv2{
+        grid-area: responsivediv2 ;
+        width: 100%;
+    }
+    .responsivediv3{
+        grid-area: responsivediv3 ;
+    }
+    .maindiv img{
+    
+        width: 100%;
+        height: auto;
+    }
+    .mainpara{
+        font-size: var(--xxx-large2-4);
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        margin: 5px;
+        color: #fff; 
+    }
+    
+
+}
+
+@media screen and (max-width:650px) and (orientation : Portrait) {
+
+    
+
+    
+
+    .mainsection{
+        background-image: url("../img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 50%;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-areas: "responsivediv2 responsivediv2" 
+                             "responsivediv3 responsivediv3";
+        align-items: center;
+    }
+    .responsivediv2{
+        grid-area: responsivediv2 ;
+        width: 100%;
+    }
+    .responsivediv3{
+        grid-area: responsivediv3 ;
+    }
+    .maindiv img{
+    
+        width: 100%;
+        height: auto;
+    }
+    .mainpara{
+        font-size: var(--xxx-large2-4);
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        margin: 5px;
+        color: #fff; 
+    }
+    .col-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "area1 area2" 
+                            "area3 area4";
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+    .area3, .area4{
+        margin-top: 5%;
+    }   
+   
+
+
+    .responsivediv3{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "firstsidbarsection" 
+                            "secondsidbarsection " 
+                            "beloWfullsection";
+    }
+
+    .beloWfullsection{
+        grid-area: beloWfullsection;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "beloWfullsection1" 
+                            "beloWfullsection2";
+    }
+    .div-floating{
+
+        position: absolute;
+        left: 0;
+        top: 2%;
+        background-color: #fff;
+        font-size: var(--medium1-5);
+        font-weight: 800;
+        padding: 15px;
+        border-radius: 0 2px 2px 0;
+    }
+    
+
+
+}
+
+@media screen and (max-width:320px) and (orientation : Portrait) {
+
+    
+
+    
+
+    .mainsection{
+        background-image: url("../img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        overflow: auto;
+        overflow-y: auto;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 0.8fr 1fr;
+        grid-template-areas: "responsivediv2 responsivediv2" 
+                             "responsivediv3 responsivediv3";
+        align-items: center;
+    }
+    .responsivediv2{
+        grid-area: responsivediv2 ;
+        width: 100%;
+    }
+    .responsivediv3{
+        grid-area: responsivediv3 ;
+        width: 100%;
+        overflow: auto;
+    }
+    .maindiv img{
+        margin-top: 30%;
+        width: 100%;
+        height: auto;
+    }
+    .mainpara{
+        font-size: var(--medium1-5);
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        margin: 5px;
+        color: #fff; 
+    }
+    .col-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "area1 area2" 
+                            "area3 area4";
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+    .area3, .area4{
+        margin-top: 5%;
+    }   
+   
+
+
+    .responsivediv3{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "firstsidbarsection" 
+                            "secondsidbarsection " 
+                            "beloWfullsection";
+    }
+
+    .beloWfullsection{
+        grid-area: beloWfullsection;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "beloWfullsection1" 
+                            "beloWfullsection2";
+    }
+
+    p.title{
+        color: var(--main-color);
+        text-transform:uppercase;
+        letter-spacing: 3px;
+        font-size: var(--small1-2) ;
+        padding-bottom: 2%;
+    }
+    
+    h3.dateheading{
+        padding-top: 5%;
+        color: var(--main-color);
+        /* text-transform:capitalize; */
+        /* letter-spacing: 3px; */
+        font-size: var(--medium1-5) ;
+        font-weight: 600;
+    }
+    h3.sideheading{
+        padding-top: 2%;
+        color: var(--main-color);
+        /* text-transform:capitalize; */
+        /* letter-spacing: 3px; */
+        font-size: var(--medium1-5) ;
+        font-weight: 600;
+    }
+    p.subdecription{
+        color: var(--main-color);
+        font-size: var(--small1-2);
+        letter-spacing: 1.5px;
+    }
+    .margin-top-8{
+        margin-top: 8%;
+    }
+    a.alink{
+        color: var(--btn);
+    }
+    a.alink:hover{
+        color: var(--btn-hover);
+    }
+    a.bigfont{
+        font-size: var(--medium1-5);
+    }
+    
+    
+    
+    
+    
+    button.belowsection{
+        display: block;
+        text-align: left;
+        /* margin-top: 10%; */
+        padding: 15px 30px;
+        background-color: var(--btn);
+        border: none;
+        border-radius: 5px;
+        font-size: var(--small1-2);
+        font-weight: 900;
+    }
+    button.belowsection:hover{
+        
+        background-color: var(--btn-hover);
+        
+    
+    }
+
+    .div-floating{
+
+        position: absolute;
+        left: 0;
+        top: 2%;
+        background-color: #fff;
+        font-size: var(--small1-2);
+        font-weight: 800;
+        padding: 15px;
+        border-radius: 0 2px 2px 0;
+    }
+    
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width:1320px)  and (orientation : landscape) {
+
+    
+    .maindiv img{
+    
+        width: 80%;
+        height: auto;
+    }
+    .mainpara{
+        font-size: 1.4rem;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        margin: 5px;
+        color: #fff; 
+    
+    }
+
+
+}
+
+@media screen and (max-width:1100px)  and (orientation : landscape) {
+
+    
+    .mainsection{
+        background-image: url("../img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100%;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "responsivediv2 responsivediv2" 
+                             "responsivediv3 responsivediv3";
+        align-items: center;
+    }
+    .responsivediv2{
+        grid-area: responsivediv2 ;
+        width: 100%;
+    }
+    .responsivediv3{
+        grid-area: responsivediv3 ;
+    }
+    .maindiv img{
+    
+        width: 100%;
+        height: auto;
+    }
+    .mainpara{
+        font-size: var(--xxx-large2-4);
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        margin: 5px;
+        color: #fff; 
+    }
+    .col-grid{
+        display: grid;
+        grid-template-columns: minmax(15%,1fr) minmax(15%,1fr) minmax(15%,1fr) minmax(15%,1fr) ;
+        grid-template-areas: "area1 area2 area3 area4";
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+
+}
+
+
+@media screen and (max-width:920px)  and (orientation : landscape) {
+
+    
+    .mainsection{
+        background-image: url("../img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 50%;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 0.8fr 1fr;
+        grid-template-areas: "responsivediv2 responsivediv2" 
+                             "responsivediv3 responsivediv3";
+        align-items: center;
+    }
+    .responsivediv2{
+        grid-area: responsivediv2 ;
+        width: 100%;
+    }
+    .responsivediv3{
+        grid-area: responsivediv3 ;
+    }
+    .maindiv img{
+    
+        width: 100%;
+        height: auto;
+    }
+    .mainpara{
+        font-size: var(--xxx-large2-4);
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        margin: 5px;
+        color: #fff; 
+    }
+    
+
+}
+
+@media screen and (max-width:650px) and (orientation : landscape) {
+
+    
+
+    
+
+    .mainsection{
+        background-image: url("../img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 50%;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-areas: "responsivediv2 responsivediv2" 
+                             "responsivediv3 responsivediv3";
+        align-items: center;
+    }
+    .responsivediv2{
+        grid-area: responsivediv2 ;
+        width: 100%;
+    }
+    .responsivediv3{
+        grid-area: responsivediv3 ;
+    }
+    .maindiv img{
+    
+        width: 100%;
+        height: auto;
+    }
+    .mainpara{
+        font-size: var(--xxx-large2-4);
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        margin: 5px;
+        color: #fff; 
+    }
+    .col-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "area1 area2" 
+                            "area3 area4";
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+    .area3, .area4{
+        margin-top: 5%;
+    }   
+   
+
+
+    .responsivediv3{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "firstsidbarsection" 
+                            "secondsidbarsection " 
+                            "beloWfullsection";
+    }
+
+    .beloWfullsection{
+        grid-area: beloWfullsection;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "beloWfullsection1" 
+                            "beloWfullsection2";
+    }
+    .div-floating{
+
+        position: absolute;
+        left: 0;
+        top: 2%;
+        background-color: #fff;
+        font-size: var(--medium1-5);
+        font-weight: 800;
+        padding: 15px;
+        border-radius: 0 2px 2px 0;
+    }
+    
+
+
+}
+
+@media screen and (max-width:320px) and (orientation : Portrait) {
+
+    
+
+    
+
+    .mainsection{
+        background-image: url("../img/aurora.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        overflow: auto;
+        overflow-y: auto;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 0.8fr 1fr;
+        grid-template-areas: "responsivediv2 responsivediv2" 
+                             "responsivediv3 responsivediv3";
+        align-items: center;
+    }
+    .responsivediv2{
+        grid-area: responsivediv2 ;
+        width: 100%;
+    }
+    .responsivediv3{
+        grid-area: responsivediv3 ;
+        width: 100%;
+        overflow: auto;
+    }
+    .maindiv img{
+        margin-top: 50%;
+        width: 100%;
+        height: auto;
+    }
+    .mainpara{
+        font-size: var(--medium1-5);
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        margin: 5px;
+        color: #fff; 
+    }
+    .col-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "area1 area2" 
+                            "area3 area4";
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+    .area3, .area4{
+        margin-top: 5%;
+    }   
+   
+
+
+    .responsivediv3{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "firstsidbarsection" 
+                            "secondsidbarsection " 
+                            "beloWfullsection";
+    }
+
+    .beloWfullsection{
+        grid-area: beloWfullsection;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "beloWfullsection1" 
+                            "beloWfullsection2";
+    }
+
+    p.title{
+        color: var(--main-color);
+        text-transform:uppercase;
+        letter-spacing: 3px;
+        font-size: var(--small1-2) ;
+        padding-bottom: 2%;
+    }
+    
+    h3.dateheading{
+        padding-top: 5%;
+        color: var(--main-color);
+        /* text-transform:capitalize; */
+        /* letter-spacing: 3px; */
+        font-size: var(--medium1-5) ;
+        font-weight: 600;
+    }
+    h3.sideheading{
+        padding-top: 2%;
+        color: var(--main-color);
+        /* text-transform:capitalize; */
+        /* letter-spacing: 3px; */
+        font-size: var(--medium1-5) ;
+        font-weight: 600;
+    }
+    p.subdecription{
+        color: var(--main-color);
+        font-size: var(--small1-2);
+        letter-spacing: 1.5px;
+    }
+    .margin-top-8{
+        margin-top: 8%;
+    }
+    a.alink{
+        color: var(--btn);
+    }
+    a.alink:hover{
+        color: var(--btn-hover);
+    }
+    a.bigfont{
+        font-size: var(--medium1-5);
+    }
+    
+    
+    
+    
+    
+    button.belowsection{
+        display: block;
+        text-align: left;
+        /* margin-top: 10%; */
+        padding: 15px 30px;
+        background-color: var(--btn);
+        border: none;
+        border-radius: 5px;
+        font-size: var(--small1-2);
+        font-weight: 900;
+    }
+    button.belowsection:hover{
+        
+        background-color: var(--btn-hover);
+        
+    
+    }
+    .div-floating{
+
+        position: absolute;
+        left: 0;
+        top: 2%;
+        background-color: #fff;
+        font-size: var(--small1-2);
+        font-weight: 800;
+        padding: 15px;
+        border-radius: 0 2px 2px 0;
+    }
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
