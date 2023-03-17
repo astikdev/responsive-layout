@@ -4,7 +4,6 @@
     padding: 0;
     font-family: monospace;
 }
-
 :root {
     --main-color : #fff;
     --btn: #3abb9d;
@@ -16,7 +15,6 @@
     --xx-large2-1: 2.1rem;
     --xxx-large2-4: 2.4rem;
 }
-
 body{
     margin: 0;
     padding: 0;
@@ -304,4 +302,34 @@ button.awe-btn:hover{
     }
     
     
+}
+
+
+
+#image-avtar {
+    display: none;
+  }
+
+.divimage-avtar{
+    padding: 50px 30px;
+    margin: 10px;
+    background: #00000080;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+} 
+
+.divimage-avtar p{
+    margin-top: 15px;
+    font-size: var(--x-large1-8);
+    color: var(--main-color);
+    font-weight: 900;
+} 
+
+.paraimage-avtar{
+    padding: 15px;
+    color: var(--main-color);
+    font-size: var(--small1-2);
+    font-weight: 100;
+    cursor: pointer;
 }
