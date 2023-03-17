@@ -24,12 +24,12 @@ body{
     
 }
 
-.mainsection{
+.last-mainsection{
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: minmax(33.33%,1fr) minmax(66.66%,2fr);
-    grid-template-areas: "responsivediv2 responsivediv3";
+    grid-template-areas: "last-responsivediv2 last-responsivediv3";
     align-items: center;
 
     background-image: url("../img/aurora.jpg");
@@ -48,18 +48,18 @@ body{
     background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
 } */
-.responsivediv2{
-    grid-area: responsivediv2 ;
+.last-responsivediv2{
+    grid-area: last-responsivediv2 ;
     max-width: 100%;
     
 }
-.responsivediv3{
-    grid-area: responsivediv3 ;
+.last-responsivediv3{
+    grid-area: last-responsivediv3 ;
     background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
 }
 
-.maindiv{
+.last-maindiv{
     /* display: grid; */
     /* align-items: center; */
     
@@ -69,7 +69,7 @@ body{
     justify-items: center;
     position: relative;;
 }
-.subgrid{
+.last-subgrid{
     height: 100%;
 }
 
@@ -86,7 +86,7 @@ body{
     border-radius: 0 2px 2px 0;
 }
 
-.col-grid{
+.last-col-grid{
     display: grid;
     grid-template-columns: minmax(15%,1fr) minmax(15%,1fr) minmax(15%,1fr) minmax(15%,1fr) ;
     grid-template-areas: "area1 area2 area3 area4";
@@ -129,17 +129,17 @@ div.timenumber{
     font-size: var(--medium1-5);
 }
 
-.maindiv img{
+.last-maindiv img{
     
     margin-top: 30% ;
 }
-.maindiv h1{
+.last-maindiv h1{
     
     margin-top: 3% ;
 }
 
 
-.mainpara{
+.last-mainpara{
     font-size: var(--large1-7);
     letter-spacing: 6px;
     text-transform: uppercase;
@@ -150,12 +150,12 @@ div.timenumber{
 
 }
 
-p.boldtext{
+p.last-boldtext{
     margin-top: 8%;
     font-weight: 900;
 }
 
-p.thintext{
+p.last-thintext{
     margin-top: 3%;
     font-weight: 100;
     margin-bottom: 10%;
@@ -166,7 +166,7 @@ p.thintext{
 
 
 
-.responsivediv3{
+.last-responsivediv3{
     display: grid;
     grid-template-columns: minmax(50%,1fr) minmax(50%,1fr);
     grid-template-rows: minmax(65%,1fr) minmax(35%,1fr);
@@ -297,12 +297,12 @@ responsivediv{
 @media screen and (max-width:1320px)  and (orientation : Portrait) {
 
     
-    .maindiv img{
+    .last-maindiv img{
     
         width: 80%;
         height: auto;
     }
-    .mainpara{
+    .last-mainpara{
         font-size: 1.4rem;
         letter-spacing: 6px;
         text-transform: uppercase;
@@ -317,7 +317,7 @@ responsivediv{
 @media screen and (max-width:1100px)  and (orientation : Portrait) {
 
     
-    .mainsection{
+    .last-mainsection{
         background-image: url("../img/aurora.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -328,30 +328,30 @@ responsivediv{
         width: 100vw;
         display: grid;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "responsivediv2 responsivediv2" 
-                             "responsivediv3 responsivediv3";
+        grid-template-areas: "last-responsivediv2 last-responsivediv2" 
+                             "last-responsivediv3 last-responsivediv3";
         align-items: center;
     }
-    .responsivediv2{
-        grid-area: responsivediv2 ;
+    .last-responsivediv2{
+        grid-area: last-responsivediv2 ;
         width: 100%;
     }
-    .responsivediv3{
-        grid-area: responsivediv3 ;
+    .last-responsivediv3{
+        grid-area: last-responsivediv3 ;
     }
-    .maindiv img{
+    .last-maindiv img{
     
         width: 100%;
         height: auto;
     }
-    .mainpara{
+    .last-mainpara{
         font-size: var(--xxx-large2-4);
         letter-spacing: 6px;
         text-transform: uppercase;
         margin: 5px;
         color: #fff; 
     }
-    .col-grid{
+    .last-col-grid{
         display: grid;
         grid-template-columns: minmax(15%,1fr) minmax(15%,1fr) minmax(15%,1fr) minmax(15%,1fr) ;
         grid-template-areas: "area1 area2 area3 area4";
@@ -366,7 +366,7 @@ responsivediv{
 @media screen and (max-width:920px)  and (orientation : Portrait) {
 
     
-    .mainsection{
+    .last-mainsection{
         background-image: url("../img/aurora.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -377,23 +377,23 @@ responsivediv{
         width: 100vw;
         display: grid;
         grid-template-rows: 0.8fr 1fr;
-        grid-template-areas: "responsivediv2 responsivediv2" 
-                             "responsivediv3 responsivediv3";
+        grid-template-areas: "last-responsivediv2 last-responsivediv2" 
+                             "last-responsivediv3 last-responsivediv3";
         align-items: center;
     }
-    .responsivediv2{
-        grid-area: responsivediv2 ;
+    .last-responsivediv2{
+        grid-area: last-responsivediv2 ;
         width: 100%;
     }
-    .responsivediv3{
-        grid-area: responsivediv3 ;
+    .last-responsivediv3{
+        grid-area: last-responsivediv3 ;
     }
-    .maindiv img{
+    .last-maindiv img{
     
         width: 100%;
         height: auto;
     }
-    .mainpara{
+    .last-mainpara{
         font-size: var(--xxx-large2-4);
         letter-spacing: 6px;
         text-transform: uppercase;
@@ -410,7 +410,7 @@ responsivediv{
 
     
 
-    .mainsection{
+    .last-mainsection{
         background-image: url("../img/aurora.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -421,30 +421,30 @@ responsivediv{
         width: 100vw;
         display: grid;
         grid-template-rows: 0.5fr 1fr;
-        grid-template-areas: "responsivediv2 responsivediv2" 
-                             "responsivediv3 responsivediv3";
+        grid-template-areas: "last-responsivediv2 last-responsivediv2" 
+                             "last-responsivediv3 last-responsivediv3";
         align-items: center;
     }
-    .responsivediv2{
-        grid-area: responsivediv2 ;
+    .last-responsivediv2{
+        grid-area: last-responsivediv2 ;
         width: 100%;
     }
-    .responsivediv3{
-        grid-area: responsivediv3 ;
+    .last-responsivediv3{
+        grid-area: last-responsivediv3 ;
     }
-    .maindiv img{
+    .last-maindiv img{
     
         width: 100%;
         height: auto;
     }
-    .mainpara{
+    .last-mainpara{
         font-size: var(--xxx-large2-4);
         letter-spacing: 6px;
         text-transform: uppercase;
         margin: 5px;
         color: #fff; 
     }
-    .col-grid{
+    .last-col-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -459,7 +459,7 @@ responsivediv{
    
 
 
-    .responsivediv3{
+    .last-responsivediv3{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -498,7 +498,7 @@ responsivediv{
 
     
 
-    .mainsection{
+    .last-mainsection{
         background-image: url("../img/aurora.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -509,32 +509,32 @@ responsivediv{
         width: 100%;
         display: grid;
         grid-template-rows: 0.8fr 1fr;
-        grid-template-areas: "responsivediv2 responsivediv2" 
-                             "responsivediv3 responsivediv3";
+        grid-template-areas: "last-responsivediv2 last-responsivediv2" 
+                             "last-responsivediv3 last-responsivediv3";
         align-items: center;
     }
-    .responsivediv2{
-        grid-area: responsivediv2 ;
+    .last-responsivediv2{
+        grid-area: last-responsivediv2 ;
         width: 100%;
     }
-    .responsivediv3{
-        grid-area: responsivediv3 ;
+    .last-responsivediv3{
+        grid-area: last-responsivediv3 ;
         width: 100%;
         overflow: auto;
     }
-    .maindiv img{
+    .last-maindiv img{
         margin-top: 30%;
         width: 100%;
         height: auto;
     }
-    .mainpara{
+    .last-mainpara{
         font-size: var(--medium1-5);
         letter-spacing: 6px;
         text-transform: uppercase;
         margin: 5px;
         color: #fff; 
     }
-    .col-grid{
+    .last-col-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -549,7 +549,7 @@ responsivediv{
    
 
 
-    .responsivediv3{
+    .last-responsivediv3{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -655,12 +655,12 @@ responsivediv{
 @media screen and (max-width:1320px)  and (orientation : landscape) {
 
     
-    .maindiv img{
+    .last-maindiv img{
     
         width: 80%;
         height: auto;
     }
-    .mainpara{
+    .last-mainpara{
         font-size: 1.4rem;
         letter-spacing: 6px;
         text-transform: uppercase;
@@ -675,7 +675,7 @@ responsivediv{
 @media screen and (max-width:1100px)  and (orientation : landscape) {
 
     
-    .mainsection{
+    .last-mainsection{
         background-image: url("../img/aurora.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -686,30 +686,30 @@ responsivediv{
         width: 100vw;
         display: grid;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "responsivediv2 responsivediv2" 
-                             "responsivediv3 responsivediv3";
+        grid-template-areas: "last-responsivediv2 last-responsivediv2" 
+                             "last-responsivediv3 last-responsivediv3";
         align-items: center;
     }
-    .responsivediv2{
-        grid-area: responsivediv2 ;
+    .last-responsivediv2{
+        grid-area: last-responsivediv2 ;
         width: 100%;
     }
-    .responsivediv3{
-        grid-area: responsivediv3 ;
+    .last-responsivediv3{
+        grid-area: last-responsivediv3 ;
     }
-    .maindiv img{
+    .last-maindiv img{
     
         width: 100%;
         height: auto;
     }
-    .mainpara{
+    .last-mainpara{
         font-size: var(--xxx-large2-4);
         letter-spacing: 6px;
         text-transform: uppercase;
         margin: 5px;
         color: #fff; 
     }
-    .col-grid{
+    .last-col-grid{
         display: grid;
         grid-template-columns: minmax(15%,1fr) minmax(15%,1fr) minmax(15%,1fr) minmax(15%,1fr) ;
         grid-template-areas: "area1 area2 area3 area4";
@@ -724,7 +724,7 @@ responsivediv{
 @media screen and (max-width:920px)  and (orientation : landscape) {
 
     
-    .mainsection{
+    .last-mainsection{
         background-image: url("../img/aurora.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -735,23 +735,23 @@ responsivediv{
         width: 100vw;
         display: grid;
         grid-template-rows: 0.8fr 1fr;
-        grid-template-areas: "responsivediv2 responsivediv2" 
-                             "responsivediv3 responsivediv3";
+        grid-template-areas: "last-responsivediv2 last-responsivediv2" 
+                             "last-responsivediv3 last-responsivediv3";
         align-items: center;
     }
-    .responsivediv2{
-        grid-area: responsivediv2 ;
+    .last-responsivediv2{
+        grid-area: last-responsivediv2 ;
         width: 100%;
     }
-    .responsivediv3{
-        grid-area: responsivediv3 ;
+    .last-responsivediv3{
+        grid-area: last-responsivediv3 ;
     }
-    .maindiv img{
+    .last-maindiv img{
     
         width: 100%;
         height: auto;
     }
-    .mainpara{
+    .last-mainpara{
         font-size: var(--xxx-large2-4);
         letter-spacing: 6px;
         text-transform: uppercase;
@@ -768,7 +768,7 @@ responsivediv{
 
     
 
-    .mainsection{
+    .last-mainsection{
         background-image: url("../img/aurora.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -779,30 +779,30 @@ responsivediv{
         width: 100vw;
         display: grid;
         grid-template-rows: 0.5fr 1fr;
-        grid-template-areas: "responsivediv2 responsivediv2" 
-                             "responsivediv3 responsivediv3";
+        grid-template-areas: "last-responsivediv2 last-responsivediv2" 
+                             "last-responsivediv3 last-responsivediv3";
         align-items: center;
     }
-    .responsivediv2{
-        grid-area: responsivediv2 ;
+    .last-responsivediv2{
+        grid-area: last-responsivediv2 ;
         width: 100%;
     }
-    .responsivediv3{
-        grid-area: responsivediv3 ;
+    .last-responsivediv3{
+        grid-area: last-responsivediv3 ;
     }
-    .maindiv img{
+    .last-maindiv img{
     
         width: 100%;
         height: auto;
     }
-    .mainpara{
+    .last-mainpara{
         font-size: var(--xxx-large2-4);
         letter-spacing: 6px;
         text-transform: uppercase;
         margin: 5px;
         color: #fff; 
     }
-    .col-grid{
+    .last-col-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -817,7 +817,7 @@ responsivediv{
    
 
 
-    .responsivediv3{
+    .last-responsivediv3{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -856,7 +856,7 @@ responsivediv{
 
     
 
-    .mainsection{
+    .last-mainsection{
         background-image: url("../img/aurora.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -867,32 +867,32 @@ responsivediv{
         width: 100%;
         display: grid;
         grid-template-rows: 0.8fr 1fr;
-        grid-template-areas: "responsivediv2 responsivediv2" 
-                             "responsivediv3 responsivediv3";
+        grid-template-areas: "last-last-responsivediv2 last-last-responsivediv2" 
+                             "last-responsivediv3 last-responsivediv3";
         align-items: center;
     }
-    .responsivediv2{
-        grid-area: responsivediv2 ;
+    .last-last-responsivediv2{
+        grid-area: last-last-responsivediv2 ;
         width: 100%;
     }
-    .responsivediv3{
-        grid-area: responsivediv3 ;
+    .last-responsivediv3{
+        grid-area: last-responsivediv3 ;
         width: 100%;
         overflow: auto;
     }
-    .maindiv img{
+    .last-maindiv img{
         margin-top: 50%;
         width: 100%;
         height: auto;
     }
-    .mainpara{
+    .last-mainpara{
         font-size: var(--medium1-5);
         letter-spacing: 6px;
         text-transform: uppercase;
         margin: 5px;
         color: #fff; 
     }
-    .col-grid{
+    .last-col-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -907,7 +907,7 @@ responsivediv{
    
 
 
-    .responsivediv3{
+    .last-responsivediv3{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
