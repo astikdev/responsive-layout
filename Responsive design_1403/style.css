@@ -6,20 +6,23 @@
 }
 
 :root {
-    --main-color : #fff,
-    --btn: #dfdfdf;
-    --btn-hover: #121212
+    --main-color : #fff;
+    --btn: #3abb9d;
+    --btn-hover: #00ffc3;
+    --small1-2: 1.2rem;
+    --medium1-5: 1.5rem;
+    --large1-7: 1.7rem;
+    --x-large1-8: 1.8rem;
+    --xx-large2-1: 2.1rem;
+    --xxx-large2-4: 2.4rem;
 }
 
+
 body{
-    background-image: url("./img/aurora.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center ;
-    height: 140vh;
-    width: 100vw;
-    overflow: hidden;
-    overflow-y: auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
 }
 
 .mainsection{
@@ -29,13 +32,23 @@ body{
     grid-template-columns: 0.3fr 1fr 0.3fr;
     grid-template-areas: "responsivediv1 responsivediv2  responsivediv3 ";
     align-items: center;
+    background-image: url("./img/aurora.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    overflow-y: auto;
+    /* background-image: url("./img/aurora.jpg"); */
 }
 .responsivediv1{
     grid-area: responsivediv1 ;
 }
 .responsivediv2{
     grid-area: responsivediv2 ;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 .responsivediv3{
     grid-area: responsivediv3 ;
@@ -47,7 +60,7 @@ body{
     background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
     padding:0 20% 0 20%;
-    text-align: center;
+    /* text-align: center; */
     justify-items: center;
     
 }
@@ -64,7 +77,7 @@ body{
 
 
 .mainpara{
-    font-size: 1.8rem;
+    font-size: var(--xx-large2-1);
     letter-spacing: 6px;
     text-transform: uppercase;
     margin: 5px;
@@ -89,8 +102,8 @@ p.thintext{
     display: block;
     font-size: 1.2rem;
     text-align: left ;
-    margin-left: 10px;
-    padding-left: 10px;
+    /* margin-left: 10px; */
+    /* padding-left: 10px; */
     /* padding-top: 30%; */
     margin-top: 15%;
     color: #fff;
@@ -98,8 +111,9 @@ p.thintext{
 
 input{
     display: block;
+    width: 100%;
     text-align: left ;
-    padding: 15px 80px 15px 10px;
+    padding: 15px 10px 15px 10px;
     background-color: rgba(0, 0, 0, 0.3);
     border: none;
     border-radius: 8px;
@@ -114,7 +128,7 @@ button{
     text-align: left;
     margin-top: 10%;
     padding: 15px 30px;
-    background-color: #26f5e7;
+    background-color: var(--btn);
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
@@ -125,26 +139,29 @@ button{
 
 button:hover{
     
-    background-color: #8cf6ef;
+    background-color: var(--btn-hover);
     
 
 }
 
-
+.margin-top-25{
+    margin-top: 25%;
+}
 .footerpara{
     vertical-align: bottom;
-    margin-top: 25%;
+
     margin-bottom: 5%;
     padding-bottom: 15px;
     color: #fff;
     font-weight: 700;
+    text-align: center;
 }
 
 .footerpara a{
     color: #fbf9f9;
 }
 
-responsivediv{
+.responsivediv{
     position: relative;
 }
 .position-image {
@@ -156,6 +173,31 @@ responsivediv{
 .mainsection-position-image{
     display: none;
 }
+.fontdecornone{
+    text-decoration: none;
+}
+.fontdecornone:hover , a:hover{
+    text-decoration: underline;
+    color: var(--btn);
+}
+
+
+@media screen and (max-width:1300px)  and (orientation : Portrait) {
+
+    .submaindiv img{
+        height: 80px;
+        width: auto;
+
+    }
+
+    .mainpara{
+        font-size: var(--x-large1-8);
+    }
+
+
+}
+
+
 
 
 
@@ -171,10 +213,10 @@ responsivediv{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        overflow: hidden;
+        /* overflow: hidden; */
+        /* height: 100vh; */
     }
 
-    
 
     .mainsection{
         grid-template-columns: 0 1fr 0;
@@ -187,7 +229,7 @@ responsivediv{
         background-size: cover;
         background-position: center center ;
         background-color: rgba(0, 0, 0, 0.3);
-        height: 100%;
+        height: 100vh;
         width: 100%;
         padding: 0;
         margin: 0;
@@ -195,13 +237,18 @@ responsivediv{
         justify-items: center;
     }
 
+    .submaindiv img{
+        height: 100px;
+        width: auto;
+
+    }
     
     .hiddendiv{
         display: none;
     }
 
     .maindiv{
-        
+        text-align: center;
         overflow-x: auto;
         height: 100%;
         width: 100%;
@@ -217,7 +264,7 @@ responsivediv{
 
     }
     .mainpara {
-        font-size: 2rem;
+        font-size: var(--xxx-large2-4);
     }
     .mainlable {
         text-align: center;
@@ -228,8 +275,8 @@ responsivediv{
         display: block;
         text-align: center;
         width: 100%;
-        padding: 15px 40px 15px 40px;
-        font-size: 2.8rem;
+        padding: 15px 60px 15px 60px;
+        font-size: var(--xx-large2-1);
     }
     button{
         display: block;
@@ -273,7 +320,7 @@ responsivediv{
         background-size: cover;
         background-position: center center ;
         background-color: rgba(0, 0, 0, 0.3);
-        height: 100%;
+        height: 100vh;
         width: 100%;
         padding: 0;
         margin: 0;
@@ -285,9 +332,14 @@ responsivediv{
     .hiddendiv{
         display: none;
     }
+    .submaindiv img{
+        height: 80px;
+        width: auto;
+
+    }
 
     .maindiv{
-        
+        text-align: center;
            overflow-x: auto;
         height: 100%;
         width: 100%;
@@ -315,7 +367,7 @@ responsivediv{
         text-align: center;
         width: 100%;
         padding: 15px 40px 15px 40px;
-        font-size: 2.8rem;
+        font-size: var(--x-large1-8);
     }
     button{
         display: block;
@@ -358,7 +410,7 @@ responsivediv{
         background-size: cover;
         background-position: center center ;
         background-color: rgba(0, 0, 0, 0.3);
-        height: 100%;
+        height: 100vh;
         width: 100%;
         padding: 0;
         margin: 0;
@@ -372,7 +424,7 @@ responsivediv{
     }
 
     .maindiv{
-        
+        text-align: center;
            overflow-x: auto;
         height: 100%;
         width: 100%;
@@ -400,7 +452,7 @@ responsivediv{
         text-align: center;
         width: 90%;
         padding: 15px 40px 15px 40px;
-        font-size: 2rem;
+        font-size: var(--large1-7);
     }
     button{
         display: block;
@@ -415,79 +467,66 @@ responsivediv{
 
 }
 
-/* @media screen and (max-width:550px) and (orientation : Portrait) {
 
-    body{
-        background-image: url("./img/aurora.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center ;
-        height: 150vh;
-        width: 100%;
-    }
-    .hiddendiv{
-        display: none;
-    }
-    
-
-    .mainsection{
-        grid-template-rows: 0 1fr 0;
-    grid-template-areas: "responsivediv1 responsivediv2  responsivediv3 ";
-    }
-
-    
-
-    .maindiv{
-        display: flex;
-
-        
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
-        height: 100%;
-        padding: none;
-    
-        padding: none;
-    }
+@media screen and (max-width:350px) and (orientation : Portrait) {
 
     .submaindiv img{
-        width: 60%;
+        height: 50px;
+        width: auto;
+
     }
 
-    .mainpara{
-        font-size:1.1rem;
+    .mainpara {
+        font-size: 1.5rem;
     }
-
-    
     .mainlable {
         text-align: center;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         
     }
     input{
+        display: block;
         text-align: center;
-        max-width: 80%;
-        justify-self: center;
+        width: 90%;
+        padding: 15px 40px 15px 40px;
+        font-size: var(--large1-7);
     }
     button{
         display: block;
-        max-width: 100%;
-        justify-self: center;
-    }
-    button:hover{
-        display: block;
         text-align: center;
-        margin-top: 10%;
-        padding: 15px;
-        background-color: #8cf6ef;
-        border: none;
-        border-radius: 5px;
         font-size: 1.1rem;
-        font-weight: 900;
+    }
+    .footerpara{
+        font-size: 1.1rem;
+    }
     
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1300px)  and (orientation : Landscape) {
+
+    .submaindiv img{
+        height: 80px;
+        width: auto;
+
+    }
+
+    .mainpara{
+        font-size: var(--x-large1-8);
     }
 
 
-} */
+}
+
 
 
 
@@ -504,10 +543,10 @@ responsivediv{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        overflow: hidden;
+        /* overflow: hidden; */
+        /* height: 100vh; */
     }
 
-    
 
     .mainsection{
         grid-template-columns: 0 1fr 0;
@@ -520,7 +559,7 @@ responsivediv{
         background-size: cover;
         background-position: center center ;
         background-color: rgba(0, 0, 0, 0.3);
-        height: 100%;
+        height: 100vh;
         width: 100%;
         padding: 0;
         margin: 0;
@@ -528,13 +567,18 @@ responsivediv{
         justify-items: center;
     }
 
+    .submaindiv img{
+        height: 100px;
+        width: auto;
+
+    }
     
     .hiddendiv{
         display: none;
     }
 
     .maindiv{
-        
+        text-align: center;
         overflow-x: auto;
         height: 100%;
         width: 100%;
@@ -550,7 +594,7 @@ responsivediv{
 
     }
     .mainpara {
-        font-size: 2rem;
+        font-size: var(--xxx-large2-4);
     }
     .mainlable {
         text-align: center;
@@ -561,8 +605,8 @@ responsivediv{
         display: block;
         text-align: center;
         width: 100%;
-        padding: 15px 40px 15px 40px;
-        font-size: 2.8rem;
+        padding: 15px 60px 15px 60px;
+        font-size: var(--xx-large2-1);
     }
     button{
         display: block;
@@ -606,7 +650,7 @@ responsivediv{
         background-size: cover;
         background-position: center center ;
         background-color: rgba(0, 0, 0, 0.3);
-        height: 100%;
+        height: 100vh;
         width: 100%;
         padding: 0;
         margin: 0;
@@ -618,9 +662,14 @@ responsivediv{
     .hiddendiv{
         display: none;
     }
+    .submaindiv img{
+        height: 80px;
+        width: auto;
+
+    }
 
     .maindiv{
-        
+        text-align: center;
            overflow-x: auto;
         height: 100%;
         width: 100%;
@@ -648,7 +697,7 @@ responsivediv{
         text-align: center;
         width: 100%;
         padding: 15px 40px 15px 40px;
-        font-size: 2.8rem;
+        font-size: var(--x-large1-8);
     }
     button{
         display: block;
@@ -691,7 +740,7 @@ responsivediv{
         background-size: cover;
         background-position: center center ;
         background-color: rgba(0, 0, 0, 0.3);
-        height: 100%;
+        height: 100vh;
         width: 100%;
         padding: 0;
         margin: 0;
@@ -705,7 +754,7 @@ responsivediv{
     }
 
     .maindiv{
-        
+        text-align: center;
            overflow-x: auto;
         height: 100%;
         width: 100%;
@@ -733,7 +782,7 @@ responsivediv{
         text-align: center;
         width: 90%;
         padding: 15px 40px 15px 40px;
-        font-size: 2rem;
+        font-size: var(--large1-7);
     }
     button{
         display: block;
@@ -749,14 +798,37 @@ responsivediv{
 }
 
 
+@media screen and (max-width:350px) and (orientation : Landscape) {
 
+    .submaindiv img{
+        height: 50px;
+        width: auto;
 
+    }
 
+    .mainpara {
+        font-size: 1.5rem;
+    }
+    .mainlable {
+        text-align: center;
+        font-size: 1.2rem;
+        
+    }
+    input{
+        display: block;
+        text-align: center;
+        width: 90%;
+        padding: 15px 40px 15px 40px;
+        font-size: var(--large1-7);
+    }
+    button{
+        display: block;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .footerpara{
+        font-size: 1.1rem;
+    }
+    
 
-
-
-
-
-
-
-
+}
