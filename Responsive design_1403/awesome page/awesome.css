@@ -25,7 +25,7 @@ body{
     width: 100%;
 }
 
-/* .mainsection{
+/* .awe-mainsection{
     height: 100%;
     width: 100%;
     display: grid;
@@ -44,7 +44,7 @@ body{
 
 } */
 
-.mainsection{
+.awe-mainsection{
     height: 100vh;
     width: 100%;
     display: grid;
@@ -149,7 +149,7 @@ button.awe-btn:hover{
 
 @media screen and (max-width:1100px)  and (orientation : Portrait) {
 
-    .mainsection{
+    .awe-mainsection{
         height:100vh;
         width: 100%;
         display: grid;
@@ -183,7 +183,7 @@ button.awe-btn:hover{
 
 @media screen and (max-width:650px)  and (orientation : Portrait) {
 
-    .mainsection{
+    .awe-mainsection{
         height:100vh;
         width: 100%;
         display: grid;
@@ -229,7 +229,7 @@ button.awe-btn:hover{
 
 @media screen and (max-width:1100px)  and (orientation : landscape) {
 
-    .mainsection{
+    .awe-mainsection{
         height:100vh;
         width: 100%;
         display: grid;
@@ -263,7 +263,7 @@ button.awe-btn:hover{
 
 @media screen and (max-width:650px)  and (orientation : landscape) {
 
-    .mainsection{
+    .awe-mainsection{
         height:100vh;
         width: 100%;
         display: grid;
